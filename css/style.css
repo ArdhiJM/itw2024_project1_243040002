@@ -1,0 +1,112 @@
+:root {
+   --prima-color: #040404 ;
+   --sec-color: #ffef78 ;
+   --oth-color: #b1fffd ;
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+}
+
+body {
+   height: 1500px;
+}
+
+.prima {
+   color: var(--prima-color);
+   background-color: var(--prima-color);
+}
+
+.sec {
+   color: var(--oth-color);
+}
+.oth {
+   color: var(--oth-color);
+}
+
+/* font */
+
+.font {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.poppins {
+   font-family: "poppins",sans-serif;
+}
+
+.caveat {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* style */
+
+.centeringnav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.centeringbox {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.centeringtext {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.hero {
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 100px;
+   border-bottom: 5px solid var(--sec-color);
+   letter-spacing: 2px;
+}
+
+.judul h1 {
+   margin-top: 80px;
+   font-size: 3rem;
+}
+
+span {
+   color: var(--oth-color);
+}
+
+.animasiline::before {
+   content:"" ;
+   position: absolute;
+   width: 100px;
+   height: 2px;
+   left: 0;
+   bottom: 0;
+   background: var(--oth-color);
+   transform: scaleX(0);
+   -webkit-transform: scaleX(0);
+   -moz-transform: scaleX(0);
+   -ms-transform: scaleX(0);
+   -o-transform: scaleX(0);
+   transition: 0.4s;
+   -webkit-transition: 0.4s;
+   -moz-transition: 0.4s;
+   -ms-transition: 0.4s;
+   -o-transition: 0.4s;
+}
+
+.animasiline:hover::before {
+   transform: scaleX();
+   -webkit-transform: scaleX();
+   -moz-transform: scaleX();
+   -ms-transform: scaleX();
+   -o-transform: scaleX();
+}
