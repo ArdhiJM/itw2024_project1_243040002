@@ -32,7 +32,6 @@ header {
 }
 
 .navbar {
-   margin-left: -500px;
 }
 
 .navbar a {
@@ -166,4 +165,18 @@ header {
 
 .social-icons a i {
    color: #fff;
+}
+
+
+/* Responsive Breakpoint */
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+   
 }
