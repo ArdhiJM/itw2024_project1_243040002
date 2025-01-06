@@ -1,58 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <!-- my css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- bootstrapp -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ardhi Jamil Muchtar</title>
+    <!---custom css link--->
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- fonts -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
   </head>
-  <body id="body">
+  <body>
+    <!---header--->
     <header>
       <h2 class="logo"><span>A</span>rdhi.</h2>
-      <nav class="navbar">
-        <a class="nav-link active" href="#body">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="">Contact</a>
-      </nav>
-      <!-- <a href="" class="btn-talk">let's talk</a> -->
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#portfolio">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
 
-    <!-- section hero start -->
-    <section class="home">
-      <div class="content-1">
-        <h2>Hi 👋, Saya <span>Ardhi Jamil Muchtar</span></h2>
-        <h4>Web Developer</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quas officiis vel quod
-          repudiandae sed enim, sit nostrum perferendis eos!
-        </p>
-        <div class="btn-group">
-          <a href="">Hire Me</a>
-          <a href="">See Project</a>
-        </div>
-        <!-- social icon -->
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <!-- social icon end -->
+    <!---home--->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h4>Hello</h4>
+        <h1>
+          Saya Ardhi <br />
+          Jamil <span>Muchtar</span>
+        </h1>
+
+        <a href="#contact" class="btn">Kontak Saya</a>
       </div>
     </section>
-    <!-- section hero end -->
+
+    <!---about--->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/about.jpg" />
+      </div>
+
+      <div class="about-text">
+        <h2>About Me</h2>
+        <h4>Hi, Saya disini untuk membantu project anda</h4>
+        <p>
+          Saya adalah mahasiswa UNPAS angkatan 2024 yang berasal dari Jakarta. Saya memiliki minat
+          yang kuat di bidang IT dan sedang berusaha untuk mengembangkan kemampuan saya di bidang
+          tersebut. Saya merupakan orang yang terbuka untuk belajar dan selalu berusaha untuk
+          memahami materi dengan baik.
+        </p>
+      </div>
+    </section>
+
+    <!---skills--->
+    <section class="services" id="services">
+      <div class="main-text">
+        <h2>My Skill</h2>
+        <h4>Beberapa Skill yang saya pahami</h4>
+      </div>
+
+      <div class="services-content">
+        <div class="box">
+          <img src="img/serv2.png" />
+          <h3>HTML</h3>
+        </div>
+
+        <div class="box">
+          <img src="img/serv2.png" />
+          <h3>CSS</h3>
+        </div>
+
+        <div class="box">
+          <img src="img/serv2.png" />
+          <h3>JS</h3>
+        </div>
+
+        <div class="box">
+          <img src="img/serv3.png" />
+          <h3>Video Editing</h3>
+        </div>
+      </div>
+    </section>
+
+    <!---portfolio--->
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <h2>My Project</h2>
+        <h4>Beberapa Proyek yang saya Kerjakan</h4>
+      </div>
+
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="img/projek1.png" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6>DOT GARAGE STORE</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>WEBSITE TOKO</h3>
+        </div>
+
+        <!-- <div class="row">
+          <img src="img/projek2.jpg" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6>LINUX ENJOYERS</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>LOGO KELOMPOK</h3>
+        </div>
+      </div> -->
+    </section>
+
+    <!---contact--->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact Me</h2>
+        <h4>Ayo bekerja sama</h4>
+        <p></p>
+        <div class="contact-list">
+          <li><a href="#">Jakarta - Indonesia</a></li>
+          <li><a href="#">ardhijamilm7890@gmail.com</a></li>
+          <li><a href="#">085771790901</a></li>
+        </div>
+        <div class="contact-icons">
+          <!-- <a href="https://twitter.com/dmswyl"><i class="bx bxl-twitter"></i></a> -->
+          <a href="https://www.facebook.com/ardhi.jamilm"><i class="bx bxl-facebook"></i></a>
+          <a href="https://github.com/ArdhiJM"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/ardhiijml"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="">
+          <input type="" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" required />
+          <input type="" placeholder="Enter Your Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Kirim" class="send" />
+        </form>
+      </div>
+    </section>
+
+    <div class="last-text">
+      <p>Developed by Ardhi Jamil © 2024</p>
+    </div>
+
+    <!---scroll-atas--->
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!---custom js link--->
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
